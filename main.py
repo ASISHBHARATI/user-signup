@@ -92,7 +92,7 @@ def validate():
                 email_input = ""
 
    
-    if not username_error and not password_error and not verify_error and not email_error:  # if we don't have any error messages:
+    if not username_error and not password_error and not verify_error and not email_error:  
         return render_template("welcome.html", username=username_input)
     else:
         return render_template ("signup.html",
